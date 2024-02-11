@@ -40,6 +40,14 @@ class SelectionSort {
         }
         System.out.println();
     }
+    public static void sort1(int[] array) {
+        selectionSort(array);
+        for (int i = 0; i < array.length; ++i) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println();
+    }
 
     public static void main(String[] args) {
         int arrayLength = 10;
