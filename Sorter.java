@@ -33,7 +33,17 @@ class SelectionSort {
         selectionSort(randomArray);
 
         System.out.println("After sorting: " + Arrays.toString(randomArray));
+
+        int[] arr = {12, 11, 13, 5, 6};
+        System.out.println("Array before sorting:");
+        printArray(arr);
+
+        insertionSort(arr);
+
+        System.out.println("\nArray after sorting:");
+        printArray(arr);
     }
+
     public class InsertionSort {
         public static void insertionSort(int[] arr) {
             int n = arr.length;
@@ -52,4 +62,5 @@ class SelectionSort {
         }
 
 
+    }
 }
