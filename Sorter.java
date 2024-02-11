@@ -16,8 +16,7 @@ class SelectionSort {
             arr[i] = temp;
         }
     }
-    public class InsertionSort {
-        public static void insertionSort(int[] arr) {
+    public static void insertionSort(int[] arr) {
             int n = arr.length;
             for (int i = 1; i < n; ++i) {
                 int key = arr[i];
@@ -31,11 +30,11 @@ class SelectionSort {
                 }
                 arr[j + 1] = key;
             }
-        }
-
     }
 
+
     public static void sort(int[] array) {
+        insertionSort(array);
         for (int i = 0; i < array.length; ++i) {
             System.out.print(arr[i] + " ");
         }
